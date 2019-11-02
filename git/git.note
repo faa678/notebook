@@ -20,3 +20,16 @@ git commit -m '提交说明'
 
 git remote add origin https://github.com/faa678/leetcode.git
 git push -u origin master
+
+
+git log	//查看commit日志
+
+//撤销commit和add
+git reset HEAD~	//撤销上一次的commit
+或 git reset HEAD~1
+
+git reset HEAD~3	//撤销前三次的commit
+
+git add -u	//将修改过的文件添加到暂存区
+
+git remote -v //查看远程仓库的链接	//一个仓库对应一个链接，不需要每次都改
