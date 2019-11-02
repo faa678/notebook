@@ -1,0 +1,22 @@
+##配置git
+git config --global user.email "***"
+git config --global user.name "***"  //global针对所有仓库设置
+
+
+git init	//初始化当前路径
+
+//git add 可以跟踪新文件，也可以跟踪已修改的文件
+git add file	//跟踪一个文件
+git add *  /  git add .		//使用git add . , 因为git add * 会忽略隐藏文件
+git commit -m '提交说明'
+
+/**
+	创建 .gitignore 文件,
+	!lib.a	使用! , 除去lib.a
+	*.[oa]	#忽略所有以 .o 或 .a 结尾的文件 
+	*~	#忽略以~结尾的文件，许多编辑器保存的副本文件
+	...
+**/
+
+git remote add origin https://github.com/faa678/leetcode.git
+git push -u origin master
