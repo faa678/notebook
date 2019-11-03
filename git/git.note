@@ -18,7 +18,8 @@ git commit -m '提交说明'
 	...
 **/
 
-git remote add origin https://github.com/faa678/leetcode.git
+	//git remote add origin https://github.com/faa678/leetcode.git
+	
 git push -u origin master
 
 
@@ -33,3 +34,7 @@ git reset HEAD~3	//撤销前三次的commit
 git add -u	//将修改过的文件添加到暂存区
 
 git remote -v //查看远程仓库的链接	//一个仓库对应一个链接，不需要每次都改
+
+git clone	//将仓库下载到本地，包括整个带初始化的仓库
+
+git config --global --edit	//编辑配置文件，比如全局配置出错，如：warning: user.email has multiple values
